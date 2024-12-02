@@ -10,5 +10,8 @@ export async function signIn({ username,password } : SignInInterface) {
         headers: { "content-type": "application/json" },
         credentials: 'include',
     });
-    if (!response.ok) throw new Error(response.statusText);
+    if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.message);
+    }
 }

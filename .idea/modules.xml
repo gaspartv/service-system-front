@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/service-system-front.iml" filepath="$PROJECT_DIR$/.idea/service-system-front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tibia-info-back/.idea/tibia-info-back.iml" filepath="$PROJECT_DIR$/../tibia-info-back/.idea/tibia-info-back.iml" />
     </modules>
   </component>
 </project>

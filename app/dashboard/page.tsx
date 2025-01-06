@@ -1,8 +1,8 @@
-export default function Dashboard() {
+import Sidebar from "@/src/components/sidebar";
+import React from "react";
+
+export default function PageDashboard() {
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <a href="/public">Sign-out</a>
-    </div>
+    <Sidebar />
   );
 }

@@ -6,11 +6,6 @@ const SECURITY_SALT=6
 
 export class Security {
   static encrypt(text: string): string {
-    console.log("Aqui: ", {
-      SECURITY_ALGORITHM: SECURITY_ALGORITHM,
-      SECURITY_SECRET: SECURITY_SECRET,
-      SECURITY_SALT: SECURITY_SALT,
-    })
     try {
       const algorithm = SECURITY_ALGORITHM!;
 

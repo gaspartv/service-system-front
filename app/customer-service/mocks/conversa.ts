@@ -1,0 +1,218 @@
+import { v4 as uuid } from "uuid"
+
+type MessageType = "text" | "image" | "audio" | "video";
+
+type SenderType = "client" | "attendant";
+
+interface SenderBy {
+  id: string;
+  createdAt: Date | null;
+  type: MessageType;
+  value: string;
+  senderBy: SenderType | null;
+  isSeparator: boolean;
+}
+
+export const messages: SenderBy[] = [
+
+  {
+    id: uuid(),
+    createdAt: null,
+    type: "text",
+    value: "Semana passada",
+    senderBy: null,
+    isSeparator: true,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Olá, gostaria de saber o status do meu pedido.",
+    senderBy: "client",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Claro! Pode me informar o número do pedido, por favor?",
+    senderBy: "attendant",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Sim, é o #12345.",
+    senderBy: "client",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Só um momento, vou verificar para você.",
+    senderBy: "attendant",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Ok, obrigado.",
+    senderBy: "client",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Seu pedido está em processamento e será enviado amanhã.",
+    senderBy: "attendant",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Ah, que bom! Obrigado pela informação.",
+    senderBy: "client",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Por nada! Se precisar de mais alguma coisa, é só falar.",
+    senderBy: "attendant",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: null,
+    type: "text",
+    value: "Ontem",
+    senderBy: null,
+    isSeparator: true,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Oi, gostaria de saber sobre o prazo de entrega.",
+    senderBy: "client",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Claro! Pode me passar o número do pedido?",
+    senderBy: "attendant",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Pedido #54321.",
+    senderBy: "client",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Verificando... Um momento.",
+    senderBy: "attendant",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Obrigado.",
+    senderBy: "client",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Seu pedido será entregue no dia 15 deste mês.",
+    senderBy: "attendant",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Entendido, obrigado!",
+    senderBy: "client",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: null,
+    type: "text",
+    value: "Hoje",
+    senderBy: null,
+    isSeparator: true,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Vocês trabalham com devoluções?",
+    senderBy: "client",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Sim, temos uma política de devoluções de 30 dias.",
+    senderBy: "attendant",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Ótimo, vou verificar o produto e entro em contato.",
+    senderBy: "client",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Perfeito, estamos à disposição.",
+    senderBy: "attendant",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Boa tarde, ainda está disponível?",
+    senderBy: "client",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Boa tarde! Sim, está disponível.",
+    senderBy: "attendant",
+    isSeparator: false,
+  },
+  {
+    id: uuid(),
+    createdAt: new Date(),
+    type: "text",
+    value: "Obrigado pela confirmação.",
+    senderBy: "client",
+    isSeparator: false,
+  },
+];

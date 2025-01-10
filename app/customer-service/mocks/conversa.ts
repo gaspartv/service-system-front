@@ -4,7 +4,7 @@ type MessageType = "text" | "image" | "audio" | "video";
 
 type SenderType = "client" | "attendant";
 
-interface SenderBy {
+export interface SenderBy {
   id: string;
   createdAt: Date | null;
   type: MessageType;
@@ -13,8 +13,7 @@ interface SenderBy {
   isSeparator: boolean;
 }
 
-export const messages: SenderBy[] = [
-
+export const messagesMock: SenderBy[] = [
   {
     id: uuid(),
     createdAt: null,
